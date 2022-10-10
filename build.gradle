@@ -1,11 +1,12 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     ext {
-        hilt_version2_35 = '2.35'
+        hilt_version2_35 = '2.44'
         android_gradle7_3_0 = '7.3.0'
         kotlin_version1_7_0 = "1.7.0"
 
     }
+
     dependencies {
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version2_35"
     }
@@ -23,4 +24,5 @@ plugins {
     id 'com.android.application' version "$android_gradle7_3_0" apply false
     id 'com.android.library' version "$android_gradle7_3_0" apply false
     id 'org.jetbrains.kotlin.android' version "$kotlin_version1_7_0" apply false
+    id 'com.google.dagger.hilt.android' version "$hilt_version2_35" apply false
 }
