@@ -1,8 +1,9 @@
 package com.heroappstrainee.githubrepository.data_layer.model.response
 
 
+import androidx.room.Entity
 import com.squareup.moshi.Json
-
+@Entity(tableName = "user")
 data class UsersResponse(
     @Json(name = "login")
     val login: String = "",

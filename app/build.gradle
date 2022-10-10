@@ -79,6 +79,11 @@ dependencies {
     //    Timber
     implementation timberDependencies
 
+    //    Okhttp
+    implementation okhttpDependencies.okhttp
+    implementation okhttpDependencies.okhttpLogging
+
+
 }
 
 kapt {
