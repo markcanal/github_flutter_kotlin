@@ -1,0 +1,77 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+//    id 'dagger.hilt.android.plugin'
+}
+
+
+android {
+    namespace 'com.heroappstrainee.githubrepository'
+    compileSdk appconfigs.compileSDK
+
+    defaultConfig {
+        applicationId appconfigs.applicationId
+        minSdk appconfigs.minSdk
+        targetSdk appconfigs.targetSDK
+        versionCode appconfigs.versionCode
+        versionName appconfigs.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    // Core
+    implementation coreJavaImplementation
+    implementation coreKotlinImplementation
+
+    //    Test
+    implementation androidxDependencies.espresso
+    testImplementation testImplementationJunit
+    androidTestImplementation androidTestImplementationJunit
+
+    //    Material
+    implementation googleDependencies.material
+    implementation androidxDependencies.appcompat
+    implementation androidxDependencies.constraintLayout
+
+    //    RecyclerView
+    implementation androidxDependencies.recyclerView
+
+    //    LifeCycle
+    implementation androidxDependencies.lifecycle
+    implementation androidxDependencies.viewModel
+    implementation androidxDependencies.liveData
+    implementation androidxDependencies.lifecycleCompilerJ8
+
+    //    Coroutine
+    implementation coroutineDependencies
+
+    //    Dagger Hilt
+    implementation hiltDependencies.hiltDager
+    kapt hiltDependencies.hiltCompiler
+
+    //    Retrofit
+    implementation retrofitDependencies.retrofit
+    implementation retrofitDependencies.moshi
+
+    //    Room
+    implementation androidxDependencies.room
+    kapt androidxDependencies.roomCompiler
+
+}
