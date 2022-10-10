@@ -12,6 +12,7 @@ ext {
     //AndroidX
     androidxVersion1_2_1 = "1.2.1"
     androidxVersion1_5_1 = "1.5.1"
+    androidxVersion1_5_3 = "1.5.3"
     androidxVersion2_1_4 = "2.1.4"
     androidxVersion2_4_3 = "2.4.3"
     androidxVersion2_5_1 = "2.5.1"
@@ -21,14 +22,15 @@ ext {
             appcompat          : "androidx.appcompat:appcompat:$androidxVersion1_5_1",
             constraintLayout   : "androidx.constraintlayout:constraintlayout:$androidxVersion2_1_4",
             espresso           : "androidx.test.espresso:espresso-core:$androidxVersion3_4_0",
+            fragment           : "androidx.fragment:fragment-ktx:$androidxVersion1_5_3",
+            liveData           : "androidx.lifecycle:lifecycle-livedata-ktx:$androidxVersion2_5_1",
+            lifecycle          : "androidx.lifecycle:lifecycle-runtime-ktx:$androidxVersion2_5_1",
+            lifecycleCompiler  : "androidx.lifecycle:lifecycle-compiler:$androidxVersion2_5_1",
+            lifecycleCompilerJ8: "androidx.lifecycle:lifecycle-common-java8:$androidxVersion2_5_1",
             room               : "androidx.room:room-runtime:$androidxVersion2_4_3",
             roomCompiler       : "androidx.room:room-compiler:$androidxVersion2_4_3",
             recyclerView       : "androidx.recyclerview:recyclerview:$androidxVersion1_2_1",
             viewModel          : "androidx.lifecycle:lifecycle-viewmodel-ktx:$androidxVersion2_5_1",
-            liveData           : "androidx.lifecycle:lifecycle-livedata-ktx:$androidxVersion2_5_1",
-            lifecycle          : "androidx.lifecycle:lifecycle-runtime-ktx:$androidxVersion2_5_1",
-            lifecycleCompiler  : "androidx.lifecycle:lifecycle-compiler:$androidxVersion2_5_1",
-            lifecycleCompilerJ8: "androidx.lifecycle:lifecycle-common-java8:$androidxVersion2_5_1"
 
     ]
 
