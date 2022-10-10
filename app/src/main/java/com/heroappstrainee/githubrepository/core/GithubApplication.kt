@@ -1,4 +1,4 @@
-package com.heroappstrainee.githubrepository
+package com.heroappstrainee.githubrepository.core
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
