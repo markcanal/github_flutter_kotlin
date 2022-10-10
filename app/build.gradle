@@ -76,6 +76,9 @@ dependencies {
     implementation androidxDependencies.room
     kapt androidxDependencies.roomCompiler
 
+    //    Timber
+    implementation timberDependencies
+
 }
 
 kapt {

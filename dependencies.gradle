@@ -60,4 +60,7 @@ ext {
             okhttp       : "com.squareup.okhttp3:okhttp:$okhttp4_9_3",
             okhttpLogging: "com.squareup.okhttp3:logging-interceptor:$okhttp4_9_3"
     ]
+
+    timber5_0_1 = '5.0.1'
+    timberDependencies = "com.jakewharton.timber:timber:$timber5_0_1"
 }
