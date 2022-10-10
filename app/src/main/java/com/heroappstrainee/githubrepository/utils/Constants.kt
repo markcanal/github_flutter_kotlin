@@ -7,4 +7,6 @@ object Constants {
     const val USER_REPO = "repos"
     const val USER_PATH = "user"
 
+    const val LIFE_SPAN = 3000L
+
 }
