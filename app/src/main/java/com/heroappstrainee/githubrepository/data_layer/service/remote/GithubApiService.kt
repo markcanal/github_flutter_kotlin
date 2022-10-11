@@ -6,6 +6,6 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 interface GithubApiService {
-    @GET(Constants.USER_PATH)
+    @GET(Constants.USER_END_POINT)
     suspend fun getAllUsers(): Response<List<UsersResponse>>
 }
