@@ -35,6 +35,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -82,6 +85,10 @@ dependencies {
     //    Okhttp
     implementation okhttpDependencies.okhttp
     implementation okhttpDependencies.okhttpLogging
+
+    //    Glide
+    implementation glideDependencies.glide
+    kapt glideDependencies.glideCompiler
 
 
 }

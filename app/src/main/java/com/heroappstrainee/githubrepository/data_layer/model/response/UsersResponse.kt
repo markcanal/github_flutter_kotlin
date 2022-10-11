@@ -3,7 +3,9 @@ package com.heroappstrainee.githubrepository.data_layer.model.response
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.heroappstrainee.githubrepository.data_layer.model.entity.UserEntity
 import com.squareup.moshi.Json
+
 @Entity(tableName = "user")
 data class UsersResponse(
     @PrimaryKey
@@ -43,4 +45,6 @@ data class UsersResponse(
     val type: String = "",
     @Json(name = "site_admin")
     val siteAdmin: Boolean = false
-)
+) {
+    fun toUserEntity(): UserEntity = UserEntity(login, avatarUrl, htmlUrl)
+}

@@ -63,4 +63,10 @@ ext {
 
     timber5_0_1 = '5.0.1'
     timberDependencies = "com.jakewharton.timber:timber:$timber5_0_1"
+
+    glide4_14_2 = '4.14.2'
+    glideDependencies = [
+            glide        : "com.github.bumptech.glide:glide:$glide4_14_2",
+            glideCompiler: "com.github.bumptech.glide:compiler:$glide4_14_2"
+    ]
 }
