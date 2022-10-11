@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:elevation="15sp">
+    android:backgroundTint="@color/cardview_light_background"
+    android:elevation="15sp"
+    app:cardCornerRadius="18dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -17,7 +19,6 @@
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_totopOf="parent"
             tools:src="@drawable/ic_launcher_background" />
 
         <androidx.appcompat.widget.AppCompatTextView
