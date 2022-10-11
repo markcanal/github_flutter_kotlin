@@ -41,8 +41,7 @@ class MainActivityAdapter @Inject constructor() :
                     userHtml.text = url
                     Glide.with(binding.root).load(avatar).apply(
                         RequestOptions().error(R.drawable.ic_launcher_background).circleCrop()
-                    ).centerCrop()
-                        .into(userAvatar)
+                    ).into(userAvatar)
                 }
             }
         }

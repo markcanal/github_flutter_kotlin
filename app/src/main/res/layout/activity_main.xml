@@ -24,6 +24,9 @@
             android:layout_margin="8dp"
             android:background="@null"
             android:hint="@string/search_user"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
             android:paddingStart="8dp"
             android:paddingEnd="8dp" />
     </androidx.cardview.widget.CardView>
