@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Github Repository</string>
     <string name="welcome_to_github">Welcome to GitHub</string>
+    <string name="search_user">Seach User</string>
 </resources>

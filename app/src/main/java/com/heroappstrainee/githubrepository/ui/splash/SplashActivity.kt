@@ -3,7 +3,7 @@ package com.heroappstrainee.githubrepository.ui.splash
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.heroappstrainee.githubrepository.MainActivity
+import com.heroappstrainee.githubrepository.ui.dashboard.MainActivity
 import com.heroappstrainee.githubrepository.R
 import com.heroappstrainee.githubrepository.utils.Constants
 import kotlinx.coroutines.CoroutineScope

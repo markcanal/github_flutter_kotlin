@@ -1,7 +1,8 @@
-package com.heroappstrainee.githubrepository
+package com.heroappstrainee.githubrepository.ui.dashboard
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.heroappstrainee.githubrepository.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
