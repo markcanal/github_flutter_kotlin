@@ -1,3 +1,4 @@
+
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
@@ -35,6 +36,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -55,11 +59,14 @@ dependencies {
     //    RecyclerView
     implementation androidxDependencies.recyclerView
 
+    //    Activity
+    implementation androidxDependencies.activity
     //    LifeCycle
     implementation androidxDependencies.lifecycle
     implementation androidxDependencies.viewModel
     implementation androidxDependencies.liveData
     implementation androidxDependencies.lifecycleCompilerJ8
+//    implementation androidxDependencies.lifecycleCompiler
 
     //    Coroutine
     implementation coroutineDependencies
@@ -82,6 +89,10 @@ dependencies {
     //    Okhttp
     implementation okhttpDependencies.okhttp
     implementation okhttpDependencies.okhttpLogging
+
+    //    Glide
+    implementation glideDependencies.glide
+    kapt glideDependencies.glideCompiler
 
 
 }

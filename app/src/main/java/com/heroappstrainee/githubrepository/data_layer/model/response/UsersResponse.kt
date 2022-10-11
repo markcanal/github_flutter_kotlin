@@ -3,44 +3,49 @@ package com.heroappstrainee.githubrepository.data_layer.model.response
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.heroappstrainee.githubrepository.data_layer.model.entity.UserEntity
 import com.squareup.moshi.Json
+
 @Entity(tableName = "user")
+
 data class UsersResponse(
     @PrimaryKey
     @Json(name = "login")
     val login: String = "",
-    @Json(name = "id")
+    @field:Json(name = "id")
     val id: Int = 0,
-    @Json(name = "node_id")
+    @field:Json(name = "node_id")
     val nodeId: String = "",
-    @Json(name = "avatar_url")
+    @field:Json(name = "avatar_url")
     val avatarUrl: String = "",
-    @Json(name = "gravatar_id")
+    @field:Json(name = "gravatar_id")
     val gravatarId: String = "",
-    @Json(name = "url")
+    @field:Json(name = "url")
     val url: String = "",
-    @Json(name = "html_url")
+    @field:Json(name = "html_url")
     val htmlUrl: String = "",
-    @Json(name = "followers_url")
+    @field:Json(name = "followers_url")
     val followersUrl: String = "",
-    @Json(name = "following_url")
+    @field:Json(name = "following_url")
     val followingUrl: String = "",
-    @Json(name = "gists_url")
+    @field:Json(name = "gists_url")
     val gistsUrl: String = "",
-    @Json(name = "starred_url")
+    @field:Json(name = "starred_url")
     val starredUrl: String = "",
-    @Json(name = "subscriptions_url")
+    @field:Json(name = "subscriptions_url")
     val subscriptionsUrl: String = "",
-    @Json(name = "organizations_url")
+    @field:Json(name = "organizations_url")
     val organizationsUrl: String = "",
-    @Json(name = "repos_url")
+    @field:Json(name = "repos_url")
     val reposUrl: String = "",
-    @Json(name = "events_url")
+    @field:Json(name = "events_url")
     val eventsUrl: String = "",
-    @Json(name = "received_events_url")
+    @field:Json(name = "received_events_url")
     val receivedEventsUrl: String = "",
-    @Json(name = "type")
+    @field:Json(name = "type")
     val type: String = "",
-    @Json(name = "site_admin")
+    @field:Json(name = "site_admin")
     val siteAdmin: Boolean = false
-)
+) {
+    fun toUserEntity(): UserEntity = UserEntity(login, avatarUrl, htmlUrl)
+}

@@ -13,12 +13,14 @@ ext {
     androidxVersion1_2_1 = "1.2.1"
     androidxVersion1_5_1 = "1.5.1"
     androidxVersion1_5_3 = "1.5.3"
+    androidxVersion1_5_0 = "1.5.0"
     androidxVersion2_1_4 = "2.1.4"
     androidxVersion2_4_3 = "2.4.3"
     androidxVersion2_5_1 = "2.5.1"
     androidxVersion3_4_0 = "3.4.0"
 
     androidxDependencies = [
+            activity           : "androidx.activity:activity-ktx:$androidxVersion1_5_0",
             appcompat          : "androidx.appcompat:appcompat:$androidxVersion1_5_1",
             constraintLayout   : "androidx.constraintlayout:constraintlayout:$androidxVersion2_1_4",
             espresso           : "androidx.test.espresso:espresso-core:$androidxVersion3_4_0",
@@ -63,4 +65,10 @@ ext {
 
     timber5_0_1 = '5.0.1'
     timberDependencies = "com.jakewharton.timber:timber:$timber5_0_1"
+
+    glide4_14_2 = '4.14.2'
+    glideDependencies = [
+            glide        : "com.github.bumptech.glide:glide:$glide4_14_2",
+            glideCompiler: "com.github.bumptech.glide:compiler:$glide4_14_2"
+    ]
 }
