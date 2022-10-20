@@ -48,5 +48,9 @@ class MainActivityAdapter @Inject constructor() :
 
     }
 
+    fun update(users: List<UserEntity>) {
+        usersList = users
+    }
+
 
 }

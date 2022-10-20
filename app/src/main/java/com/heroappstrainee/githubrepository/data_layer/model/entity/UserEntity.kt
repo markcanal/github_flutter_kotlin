@@ -4,4 +4,8 @@ data class UserEntity(
     val login: String,
     val avatar: String,
     val url: String
-)
+){
+    fun clear(){
+        UserEntity("","","")
+    }
+}
