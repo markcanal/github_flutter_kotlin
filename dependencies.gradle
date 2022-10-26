@@ -20,19 +20,21 @@ ext {
     androidxVersion3_4_0 = "3.4.0"
 
     androidxDependencies = [
-            activity           : "androidx.activity:activity-ktx:$androidxVersion1_5_0",
-            appcompat          : "androidx.appcompat:appcompat:$androidxVersion1_5_1",
-            constraintLayout   : "androidx.constraintlayout:constraintlayout:$androidxVersion2_1_4",
-            espresso           : "androidx.test.espresso:espresso-core:$androidxVersion3_4_0",
-            fragment           : "androidx.fragment:fragment-ktx:$androidxVersion1_5_3",
-            liveData           : "androidx.lifecycle:lifecycle-livedata-ktx:$androidxVersion2_5_1",
-            lifecycle          : "androidx.lifecycle:lifecycle-runtime-ktx:$androidxVersion2_5_1",
-            lifecycleCompiler  : "androidx.lifecycle:lifecycle-compiler:$androidxVersion2_5_1",
-            lifecycleCompilerJ8: "androidx.lifecycle:lifecycle-common-java8:$androidxVersion2_5_1",
-            room               : "androidx.room:room-runtime:$androidxVersion2_4_3",
-            roomCompiler       : "androidx.room:room-compiler:$androidxVersion2_4_3",
-            recyclerView       : "androidx.recyclerview:recyclerview:$androidxVersion1_2_1",
-            viewModel          : "androidx.lifecycle:lifecycle-viewmodel-ktx:$androidxVersion2_5_1",
+            activity             : "androidx.activity:activity-ktx:$androidxVersion1_5_0",
+            appcompat            : "androidx.appcompat:appcompat:$androidxVersion1_5_1",
+            constraintLayout     : "androidx.constraintlayout:constraintlayout:$androidxVersion2_1_4",
+            espresso             : "androidx.test.espresso:espresso-core:$androidxVersion3_4_0",
+            fragment             : "androidx.fragment:fragment-ktx:$androidxVersion1_5_3",
+            liveData             : "androidx.lifecycle:lifecycle-livedata-ktx:$androidxVersion2_5_1",
+            lifecycle            : "androidx.lifecycle:lifecycle-runtime-ktx:$androidxVersion2_5_1",
+            lifecycleCompiler    : "androidx.lifecycle:lifecycle-compiler:$androidxVersion2_5_1",
+            lifecycleCompilerJ8  : "androidx.lifecycle:lifecycle-common-java8:$androidxVersion2_5_1",
+            room                 : "androidx.room:room-runtime:$androidxVersion2_4_3",
+            roomCompiler         : "androidx.room:room-compiler:$androidxVersion2_4_3",
+            recyclerView         : "androidx.recyclerview:recyclerview:$androidxVersion1_2_1",
+            viewModel            : "androidx.lifecycle:lifecycle-viewmodel-ktx:$androidxVersion2_5_1",
+            navigationFragmentKtx: "androidx.navigation:navigation-fragment-ktx:$nav_version2_5_2",
+            navigationUiKtx      : "androidx.navigation:navigation-ui-ktx:$nav_version2_5_2"
 
     ]
 

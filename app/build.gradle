@@ -4,6 +4,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 //apply plugin: 'com.android.application'
@@ -93,6 +94,11 @@ dependencies {
     //    Glide
     implementation glideDependencies.glide
     kapt glideDependencies.glideCompiler
+
+    //    Navigation
+    implementation androidxDependencies.navigationFragmentKtx
+    implementation androidxDependencies.navigationUiKtx
+
 
 
 }

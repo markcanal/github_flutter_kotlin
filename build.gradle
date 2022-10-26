@@ -4,11 +4,13 @@ buildscript {
         hilt_version2_35 = '2.44'
         android_gradle7_3_0 = '7.3.0'
         kotlin_version1_7_0 = "1.7.0"
+        nav_version2_5_2 = "2.5.2"
 
     }
 
     dependencies {
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version2_35"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version2_5_2"
     }
     apply from: "appconfig.gradle"
     apply from: "dependencies.gradle"

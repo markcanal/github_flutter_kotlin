@@ -1,8 +1,8 @@
 ext.appconfigs = [
         applicationId: "com.heroappstrainee.githubrepository",
-        minSdk       : 21,
-        targetSDK    : 32,
+        minSdk       : 19,
+        targetSDK    : 33,
         versionCode  : 1,
-        versionName  : "0.0.1",
-        compileSDK   : 32
+        versionName  : "1.0.1",
+        compileSDK   : 33
 ]
