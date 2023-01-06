@@ -8,8 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.heroappstrainee.githubrepository.databinding.ActivityMainBinding
 import com.heroappstrainee.githubrepository.ui.dashboard.viewModel.MainViewModel
-import com.heroappstrainee.githubrepository.utils.showLongToast
-import com.heroappstrainee.githubrepository.utils.showShortToast
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -27,7 +25,6 @@ class MainActivity : AppCompatActivity() {
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 mainViewModel.searchMeNot(s.toString())
-
             }
 
             override fun afterTextChanged(s: Editable?) {
@@ -47,7 +44,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setUpObserver() {
-
         mainViewModel.usersFiltered.observe(this) { userList ->
             userList?.let {
                 binding.userCollectionView.apply {
@@ -58,9 +54,5 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-
-
-
     }
-
 }

@@ -41,11 +41,6 @@ class MainViewModel @Inject constructor(private val repository: ApplicationRepos
                         forEach { usersResponse ->
                             userList = userList + usersResponse.toUserEntity()
                         }
-//                        forEach { (login,_,_,avatar,_,_,html,_,_,_,_,_,_,_,_,_,_,_)->
-//                            userList = userList + UserEntity(login,avatar,html)
-//
-//                        }
-
                         _usersLiveData.postValue(userList)
                         _usersFilteredLiveData.postValue(userList)
                         Timber.i("## $userList")
@@ -56,16 +51,14 @@ class MainViewModel @Inject constructor(private val repository: ApplicationRepos
         }
     }
 
-
     fun searchMeNot(string: String) {
         if (string.isNotEmpty()) {
             val s = _usersLiveData.value?.filter { u -> u.login.contains(string) }
             if (s != null) {
-               _usersFilteredLiveData.postValue(s)
-
+                _usersFilteredLiveData.postValue(s)
             }
         } else
-           _usersFilteredLiveData.postValue(userList)
+            _usersFilteredLiveData.postValue(userList)
     }
 
 
