@@ -4,9 +4,12 @@
 # Hi team! I need more knowledge and guidance for setup and approach for the architecture
  ##Feel free to create your branch for improvement and suggestions.
 
-// core java
-coreJavaImplementation = "androidx.core:core:$kotlin_version1_7_0"
-coreKotlinImplementation = "androidx.core:core-ktx:$kotlin_version1_7_0"
+[//]: # ()
+[//]: # (// core java)
+
+[//]: # (coreJavaImplementation = "androidx.core:core:$kotlin_version1_7_0")
+
+[//]: # (coreKotlinImplementation = "androidx.core:core-ktx:$kotlin_version1_7_0")
 
 [//]: # ()
 [//]: # (    //Material)
